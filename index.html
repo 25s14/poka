@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <title>rasmita poka - Player vs CPU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>rasmita poka</h1>
+        
+        <div class="stats">
+            <p>तपाईंको पैसा: <span id="my-money">$1000</span></p>
+            <p>बाजी (Bet): <input type="number" id="bet-amount" value="100" min="10"></p>
+        </div>
+
+        <div class="game-board">
+            <div class="section">
+                <h3>कम्प्युटर (CPU)</h3>
+                <div id="cpu-cards" class="cards"></div>
+                <p id="cpu-result">-</p>
+            </div>
+
+            <hr>
+
+            <div class="section">
+                <h3>तपाईं (Player)</h3>
+                <div id="player-cards" class="cards"></div>
+                <p id="player-result">-</p>
+            </div>
+        </div>
+
+        <button id="play-btn" onclick="playGame()">खेल्नुहोस् (Deal)</button>
+        <h2 id="final-outcome">नतिजा पर्खनुहोस्...</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

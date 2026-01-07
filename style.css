@@ -1,0 +1,9 @@
+body { background-color: #1b5e20; color: white; font-family: sans-serif; text-align: center; }
+.game-container { padding: 20px; }
+.stats { background: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px; margin-bottom: 20px; }
+.cards { display: flex; justify-content: center; gap: 10px; margin: 10px 0; min-height: 120px; }
+.card-img { width: 80px; border-radius: 5px; box-shadow: 2px 2px 5px #000; }
+button { padding: 15px 40px; font-size: 20px; background: #f1c40f; border: none; cursor: pointer; border-radius: 30px; }
+button:hover { background: #d4ac0d; }
+hr { border: 1px solid rgba(255,255,255,0.2); margin: 20px 0; }
+#final-outcome { font-size: 32px; text-shadow: 2px 2px #000; margin-top: 20px; }
