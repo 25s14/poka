@@ -58,11 +58,11 @@ function playGame() {
     const bet = parseInt(betInput.value);
 
     if (isNaN(bet) || bet <= 0) {
-        alert("सही बाजी राख्नुहोस् (Please enter a valid bet)");
+        alert("正しい賭けをしてください。(Please enter a valid bet)");
         return;
     }
     if (bet > myMoney) {
-        alert("पैसा पुगेन (Not enough money)");
+        alert("お金だけでは足りない。(Not enough money)");
         return;
     }
 
@@ -81,14 +81,14 @@ function playGame() {
     let outcomeText = document.getElementById('final-outcome');
     if (player.score > cpu.score) {
         myMoney += bet * 2;
-        outcomeText.innerText = "तपाईंले जित्नुभयो! 🎉 (Winner: Player)";
+        outcomeText.innerText = "勝ちましたよ！ 🎉 (Winner: Player)";
         outcomeText.style.color = "#2ecc71";
     } else if (player.score < cpu.score) {
-        outcomeText.innerText = "CPU ले जित्यो! 😢 (Winner: CPU)";
+        outcomeText.innerText = "CPUが勝ちました！ 😢 (Winner: CPU)";
         outcomeText.style.color = "#e74c3c";
     } else {
         myMoney += bet;
-        outcomeText.innerText = "बराबर (Draw)! 🤝";
+        outcomeText.innerText = "等しい (Draw)! 🤝";
         outcomeText.style.color = "#f1c40f";
     }
 
